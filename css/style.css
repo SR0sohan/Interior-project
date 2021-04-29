@@ -138,7 +138,7 @@ header{
 
 .s1,.s2,.s3{
     background-color: white;
-    transition: 0.5s;
+
 }
 .s1:hover .content h2, .s2:hover .content h2, .s3:hover .content h2{
     color: white;
@@ -147,6 +147,7 @@ header{
 .s1:hover .content p, .s2:hover .content p, .s3:hover .content p{
     color: rgba(255,255,255);
     opacity: 1;
+    z-index: 9;
 }
 
 .s1:hover .serial h1, .s2:hover .serial h1, .s3:hover .serial h1{
@@ -156,25 +157,26 @@ header{
 .s1:hover{
     position: relative;
     background: url(../image/hover-one.png) center no-repeat;
-    transition: 0.5s;
+   
 }
 .s2:hover{
     position: relative;
     background: url(../image/hover-two.png) center no-repeat;
-    transition: 0.5s;
+  
 }
 .s3:hover{
     position: relative;
     background: url(../image/hover-three.png) center no-repeat;
-    transition: 0.5s;
+    
 }
 .s1:hover::before, .s2:hover::before, .s3:hover::before{
     content: '';
     position: absolute;
     background: #001D38;
-    opacity: 0.6;
+    opacity: 0.4;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
+    /* z-index: -9; */
 }
