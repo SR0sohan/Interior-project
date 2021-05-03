@@ -7,10 +7,16 @@ body{
 }
 
 header{
-    padding-top: 25px;
+    padding: 25px 0;
     position: absolute;
     width: 100%;
     z-index: 9;
+}
+
+.sticky{
+    width: 100%;
+    position: fixed;
+    background-color: #001D38;
 }
 
 .text-menu{
@@ -156,16 +162,17 @@ header{
 .s1:hover{
     position: relative;
     background: url(../image/hover-one.png) center no-repeat;
-   
+   z-index: 0;
 }
 .s2:hover{
     position: relative;
     background: url(../image/hover-two.png) center no-repeat;
-  
+   z-index: 0;
 }
 .s3:hover{
     position: relative;
     background: url(../image/hover-three.png) center no-repeat;
+    z-index: 0;
 }
 .s1:hover::before, .s2:hover::before, .s3:hover::before{
     content: '';
@@ -176,6 +183,7 @@ header{
     bottom: 0;
     right: 0;
     left: 0;
+    z-index: -1;
 }
 
 /* ///////////// */
@@ -334,7 +342,7 @@ header{
 
 .testiminials{
     width: 100%;
-    height: auto;
+    height: 77vh;
     background: url(../image/testimonial-bg.png);
     background-position: center;
     background-size: cover;
