@@ -232,16 +232,41 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="test-text">
-                          <img src="image/quote.png" class="img-fluid" alt="">
-                            <p>Donec imperdiet congue orci consequat mattis.  Donec rutrum porttitor
-                              sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
-                              Fusce ac mattis nulla. Morbi eget ornare dui. </p>
-                              <img src="image/commentator.png" class="img-fluid" alt="">
-                              <h4>Robert Thompson</h4>
-                              <h5>Business Owner</h5>
-                        </div>
-                        
+                        <div class="owl-carousel owl-theme">
+                          <div class="item">
+                            <div class="test-text">
+                              <img src="image/quote.png" class="img-fluid" alt="">
+                                <p>Donec imperdiet congue orci consequat mattis.  Donec rutrum porttitor
+                                  sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                  Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                  <img src="image/commentator.png" class="img-fluid" alt="">
+                                  <h4>Robert Thompson</h4>
+                                  <h5>Business Owner</h5>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="test-text">
+                              <img src="image/quote.png" class="img-fluid" alt="">
+                                <p>Donec imperdiet congue orci consequat mattis.  Donec rutrum porttitor
+                                  sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                  Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                  <img src="image/commentator.png" class="img-fluid" alt="">
+                                  <h4>Robert Thompson</h4>
+                                  <h5>Business Owner</h5>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="test-text">
+                              <img src="image/quote.png" class="img-fluid" alt="">
+                                <p>Donec imperdiet congue orci consequat mattis.  Donec rutrum porttitor
+                                  sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.
+                                  Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                  <img src="image/commentator.png" class="img-fluid" alt="">
+                                  <h4>Robert Thompson</h4>
+                                  <h5>Business Owner</h5>
+                            </div>
+                          </div>
+                      </div>
                       </div>
                     </div>
                   </div>
@@ -332,28 +357,27 @@
 
 
               <!-- owl carousel js -->
-              <!-- <script src="js/jquery.min.js"></script>
+              <script src="js/jquery.min.js"></script>
               <script src="js/owl.carousel.js"></script>
 
               
               <script>
-                $('.owl-carousel').owlCarousel({
+                var owl = $('.owl-carousel');
+                    owl.owlCarousel({
+                        items:1,
                         loop:true,
                         margin:10,
-                        nav:true,
-                        responsive:{
-                            0:{
-                                items:1
-                            },
-                            600:{
-                                items:1
-                            },
-                            1000:{
-                                items:1
-                            }
-                        }
+                        autoplay:true,
+                        autoplayTimeout:2000,
+                        autoplayHoverPause:true
+                    });
+                    $('.play').on('click',function(){
+                        owl.trigger('play.owl.autoplay',[1000])
                     })
-              </script> -->
+                    $('.stop').on('click',function(){
+                        owl.trigger('stop.owl.autoplay')
+                    })
+              </script>
               <!-- Option 1: Bootstrap Bundle with Popper -->
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 
