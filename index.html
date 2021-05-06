@@ -130,7 +130,7 @@
                   <div class="item"></div>
               </div> -->
 
-              
+
               <!-- <div class="owl-carousel owl-theme">
                 <div class="item">
                   <section class="banner">
@@ -439,8 +439,30 @@
               <script src="js/jquery.min.js"></script>
               <script src="js/owl.carousel.js"></script>
 
+             <script>
+                $('.owl-carousel').owlCarousel({
+                dots:false,
+                loop:true,
+                margin:10,
+                nav:true,
+                autoplay:true,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
+             </script>
               
-              <script>
+              <!-- <script>
                 var owl = $('.owl-carousel');
                     owl.owlCarousel({
                         dots:false,
@@ -449,7 +471,7 @@
                         margin:10,
                         autoplay:false,
                         autoplayTimeout:2000,
-                        autoplayHoverPause:true
+                        autoplayHoverPause:true,
                     });
                     $('.play').on('click',function(){
                         owl.trigger('play.owl.autoplay',[1000])
@@ -457,7 +479,7 @@
                     $('.stop').on('click',function(){
                         owl.trigger('stop.owl.autoplay')
                     })
-              </script>
+              </script> -->
               <!-- Option 1: Bootstrap Bundle with Popper -->
               <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 

@@ -107,6 +107,24 @@ header{
     background-color: #001D38;
 }
 
+.owl-nav {
+	margin: 0 !important;
+}
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 45%;
+	color: #fff !important;
+	font-size: 120px !important;
+	font-weight: 100 !important;
+	transform: translateY(-50%);
+}
+.owl-prev {
+	left: 1%;
+}
+.owl-next {
+	right: 1%;
+}
+
 /* //// */
 .category{
     width: 100%;
