@@ -191,17 +191,26 @@ header{
 }
 .s1:hover{
     position: relative;
-    background: url(../image/hover-one.png) center no-repeat;
+    background: url(../image/hover-one.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    z-index: 0;
 }
 .s2:hover{
     position: relative;
-    background: url(../image/hover-two.png) center no-repeat;
+    background: url(../image/hover-two.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
    z-index: 0;
 }
 .s3:hover{
     position: relative;
-    background: url(../image/hover-three.png) center no-repeat;
+    background: url(../image/hover-three.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 0;
 }
 .s1:hover::before, .s2:hover::before, .s3:hover::before{
@@ -294,6 +303,7 @@ header{
 .about-text h1{
     font-size: 50px;
     font-weight: 500;
+    width: 75%;
 }
 
 .about-text p{
@@ -501,19 +511,21 @@ header{
 }
 .fieldo{
     margin-bottom: 26px;
+    position: relative;
 }
 .fieldo input{
     background: transparent;
-    padding: 15px 200px 15px 20px;
+    padding: 15px 22px;
     border: 1px solid #334A60;
     border-radius: 50px;
     color: white;
+    
 }
+
 .fieldo input:focus{
     outline: none;
 }
 .insert{
-    margin-left: -132px;
     padding: 11px 22px;
     border-radius: 50px;
     font-size: 16px;
@@ -522,6 +534,9 @@ header{
     border: none;
     color: black;
     outline: none;
+    position: absolute;
+    top: 10%;
+    right: 1%;
 }
 .bot-cont{
     margin-top: 120px;
